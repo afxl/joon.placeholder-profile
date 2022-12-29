@@ -73,9 +73,13 @@ document.querySelector("#nav-posts").addEventListener("click", async function (e
        document.querySelector(".msg").classList.remove("hidden")
       return;
     }
-    if (curDisplay == document.querySelector(".posts")) {
+    if (
+      curDisplay == document.querySelector(".posts") &&
+      !document.querySelector("#front").classList.contains("hidden")
+    ) {
       return;
     }
+    pagination(10)
     displayManager(document.querySelector(".posts"));
     e.preventDefault();
     showPosts();
