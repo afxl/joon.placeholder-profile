@@ -136,7 +136,7 @@ img{
 a:hover,a:focus{
     color:skyblue !important
 }
-users .card:hover{
+.users .card:hover{
     transform: translateY(-10px);
 }
 .msg{
